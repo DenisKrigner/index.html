@@ -18,6 +18,7 @@
 
         let button = document.getElementById("buy");
         let tg = window.Telegram.WebApp;
+        tg.expand();
 
         button.addEventListener("click", () => {
             document.getElementById("user_name").style.display = "none"
