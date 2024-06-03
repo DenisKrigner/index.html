@@ -17,11 +17,11 @@
         <script>
 
         let button = document.getElementById("buy");
-
+        let tg = window.Telegram.WebApp;
 
         button.addEventListener("click", () => {
             document.getElementById("user_name").style.display = "none"
-
+            tg.close();
         });
     </script>
 </body>
