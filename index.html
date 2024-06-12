@@ -15,12 +15,16 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 
         <script>
-
-        let button = document.getElementById("buy");
         let tg = window.Telegram.WebApp;
-        tg.expand();
+        let button = document.getElementById("buy");
+        let name = document.getElementById("user_name");
 
         button.addEventListener("click", () => {
+            let data =
+            {
+                name: name.value
+            }
+            tg.sendData(JSON.stringify(data));
             document.getElementById("user_name").style.display = "none"
             tg.close();
         });
