@@ -50,7 +50,7 @@
 </head>
 <body>
     <div class="Main">
-        <h1>Тесто33вое при</h1>
+        <h1>Тесто33555вое при</h1>
         <img src="{{ url_for('static', filename='bot.png') }}" alt="123">
         <p></p>
         <button id="btt">Кнопка</button>
@@ -66,9 +66,11 @@
             d: "1"
             t: "2"
         }
-        let fBtn = document.getElementsById("btt").addEventListener("click", function() {
-        sendData(tg.sendData(JSON.stringify(data));)
-         });
+        let fBtn = document.getElementsById("btt").addEventListener("click", function()
+        {
+            sendData(tg.sendData(JSON.stringify(data)))
+            tg.close()
+        });
 
 
     </script>
