@@ -50,29 +50,14 @@
 </head>
 <body>
     <div class="Main">
-        <h1>Тесто111вое при</h1>
+        <h1>Тесто121вое при</h1>
         <img src="{{ url_for('static', filename='bot.png') }}" alt="123">
         <p></p>
         <button id="btt">Кнопка</button>
     </div>
 
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="code.js"></script>
 
-    <script>
-        let tg = window.Telegram.WebApp;
-
-        let data =
-        {
-            d: "1"
-            t: "2"
-        }
-        let fBtn = document.getElementById("btt").addEventListener("click", function()
-        {
-            sendData(tg.sendData(JSON.stringify(data)))
-            tg.close()
-        });
-
-
-    </script>
 </body>
 </html>
