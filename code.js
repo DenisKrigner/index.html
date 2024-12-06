@@ -12,7 +12,4 @@ let btn1 = document.getElementById("btt").addEventListener("click", function()
             tg.close();
         });
 
-
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData(item);
-});
+tg.sendData(JSON.stringify("1111"))
